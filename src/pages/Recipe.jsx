@@ -7,16 +7,14 @@ export default function Recipe() {
   const [details, setDetails] = useState({});
   const [activeTab, setActiveTab] = useState("instructions");
 
-  const fetchDetails = async () => {
-    const data = await fetch(
-      `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`
-    );
-    const detailData = await data.json();
-    setDetails(detailData);
-    console.log(detailData);
-  };
-
   useEffect(() => {
+    const fetchDetails = async () => {
+      const data = await fetch(
+        `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=43c0758b2bc54432a2e762f5186650d5`
+      );
+      const detailData = await data.json();
+      setDetails(detailData);
+    };
     fetchDetails();
   }, [params.name]);
 
