@@ -18,7 +18,7 @@ export default function Veggie() {
       setVeggie(JSON.parse(check)); // if already stored update popular state
     } else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=43c0758b2bc54432a2e762f5186650d5&number=9&tags=vegetarian` // fetch recipe from api (number=9 restricts only 9 results)
+        `https://api.spoonacular.com/recipes/random?apiKey=568d0160f76b486bbeb96e5ca3bfd13a&number=9&tags=vegetarian` // fetch recipe from api (number=9 restricts only 9 results)
       ); // .env is used as it can't be accessed by others. so only we will the api key
       const data = await api.json();
       localStorage.setItem("veggie", JSON.stringify(data.recipes)); // store fetched recipe in local storage

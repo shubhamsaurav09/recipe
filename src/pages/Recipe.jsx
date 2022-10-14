@@ -10,7 +10,7 @@ export default function Recipe() {
   useEffect(() => {
     const fetchDetails = async () => {
       const data = await fetch(
-        `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=43c0758b2bc54432a2e762f5186650d5`
+        `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=568d0160f76b486bbeb96e5ca3bfd13a`
       );
       const detailData = await data.json();
       setDetails(detailData);
