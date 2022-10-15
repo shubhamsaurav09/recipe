@@ -60,13 +60,20 @@ export default function Recipe() {
 }
 
 const DetailWrapper = styled.div`
-  marin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .active {
     background: linear-gradient(35deg, #494949, #313131);
     color: white;
+  }
+
+  img {
+    border-radius: 2rem;
+    align-self: center;
   }
 
   h2 {
@@ -84,14 +91,17 @@ const DetailWrapper = styled.div`
 `;
 
 const Button = styled.button`
+  margin: 2rem 2rem 0rem 5rem;
   padding: 1rem 2rem;
   color: #313131;
   backrground: white;
   border: 2px solid black;
-  margin-right: 2rem;
+  border-radius: 1rem;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 const Info = styled.div`
-  margin-left: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 `;
