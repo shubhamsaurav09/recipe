@@ -68,7 +68,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  marin-left: 10px;
+  margin-left: 10px;
   min-height: 15rem;
   border-radius: 2rem;
   overflow: hidden;

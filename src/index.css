@@ -15,15 +15,15 @@ html {
 }
 
 body {
-  min-width: 720px;
+  width: 75%;
   height: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0% 15%;
-  /* background-size: cover;
+  margin: 0% 15% 0% 12.5%;
+  background-size: cover;
   background-image: linear-gradient(
     to left bottom,
     #eeaeca,
@@ -38,7 +38,8 @@ body {
     #5ee5fe,
     #57f0fa,
     #5ffbf1
-  ); */
+  );
+  /* background-image: url(../public/tomato-gcef115274_1920.jpg); */
 }
 
 code {
