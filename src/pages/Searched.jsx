@@ -37,14 +37,30 @@ export default function Searched() {
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Card = styled.div`
   img {
     width: 100%;
     border-radius: 2rem;
+    @media (max-width: 1024px) {
+      border-radius: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      border-radius: 1rem;
+    }
   }
 
   a {

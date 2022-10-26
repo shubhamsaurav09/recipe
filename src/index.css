@@ -23,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0% 15% 0% 12.5%;
-  background-size: cover;
+  background-size: 1000vw 1000vh; /*Change this later*/
   background-image: linear-gradient(
     to left bottom,
     #eeaeca,
@@ -61,4 +61,28 @@ h4 {
 
 a {
   color: rgb(56, 56, 56);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 95%;
+  }
 }

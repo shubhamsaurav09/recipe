@@ -73,6 +73,10 @@ const Card = styled.div`
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
+  @media (max-width: 1024px) {
+    margin-left: 5px;
+    border-radius: 1.5rem;
+  }
 
   img {
     border-radius: 2rem;

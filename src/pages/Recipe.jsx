@@ -88,6 +88,15 @@ const DetailWrapper = styled.div`
   ul {
     margin-top: 2rem;
   }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 480px) {
+  }
 `;
 
 const Button = styled.button`
